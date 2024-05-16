@@ -10,6 +10,7 @@ class PositionSeeder extends Seeder
 {
     /**
      * Run the database seeds.
+     *
      */
     public function run(): void
     {
@@ -17,22 +18,18 @@ class PositionSeeder extends Seeder
             [
                 'code' => 'FE',
                 'name' => 'Front End Developer',
-                'description' => 'Front End Developer'
+                'description' => 'Front End Developer',
             ],
             [
                 'code' => 'BE',
                 'name' => 'Back End Developer',
-                'description' => 'Back End Developer'
+                'description' => 'Back End Developer',
             ],
             [
                 'code' => 'SA',
-                'name' => 'System Analist',
-                'description' => 'System Analist'
+                'name' => 'System Analyst',
+                'description' => 'System Analyst',
             ],
         ]);
     }
 }
-            
-
-
-

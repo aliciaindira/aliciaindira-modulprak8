@@ -14,5 +14,3 @@ class Employee extends Model
         return $this->belongsTo(Position::class);
     }
 }
-
-

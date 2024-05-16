@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+
 return new class extends Migration
 {
     /**
@@ -11,15 +12,16 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('employees', function (Blueprint $table) {
-            $table->id();
-            $table->string('firstname');
-            $table->string('lastname')->nullable();
-            $table->string('email')->unique();
-            $table->integer('age');
-            $table->foreignId('position_id')->constrained();
-            $table->timestamps();
+            $table->id();                                   // Kolom untuk ID  (id sebagai primary key)
+            $table->string('firstname');                     // Kolom untuk nama depan
+            $table->string('lastname')->nullable();           // Kolom untuk nama belakang, karena ada nullable artinya boleh kosong
+            $table->string('email')->unique();                 // Kolom untuk email ( harus menggunakan karaktr unik)
+            $table->integer('age');                            // Kolom untuk usia (mengggunkan bilangan bulat)
+            $table->foreignId('position_id')->constrained();  // Kolom ID posisi (menjadi foreign key)
+            $table->timestamps();                             // Kolom waktu dan update otomatis
         });
     }
+
     /**
      * Reverse the migrations.
      */

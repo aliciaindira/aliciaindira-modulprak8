@@ -1,5 +1,4 @@
 @extends('layouts.app')
-
 @section('content')
     <div class="container-sm my-5">
         <div class="row justify-content-center">
@@ -36,8 +35,8 @@
                 <hr>
                 <div class="row">
                     <div class="col-md-12 d-grid">
-                        <a href="{{ route('employees.index') }}" class="btn btn-outline-dark btn-lg mt-3"><i
-                                class="bi-arrow-left-circle me-2"></i> Back</a>
+                        <a href="{{ route('employees.index') }}" class="btn btn-outline-dark btn-lg mt-3"><i class="bi-arrow-left-circle
+me-2"></i> Back</a>
                     </div>
                 </div>
             </div>
